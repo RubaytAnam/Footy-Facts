@@ -1,291 +1,202 @@
-*{
-  margin: 0;
-  padding: 0;
-  /* font-family: 'Poppins', sans-serif; */
-
-
-}
-
-.main{
-    width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url("1.jpg.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 109vh; 
-    
-}
-
-.navbar{
-    width: 1200px;
-    height: 75px;
-    margin: auto;
-    
-    
-}
-nav.logo{
-    width: 125%; text-align: center;
-    background: red;
-}
-
-nav.logo1{
-    width: 125%; text-align: left;
-    background: rgb(247, 244, 244);
-    font-size: 35px;
-    font-family: Calibri;
-    padding-left: 20px;
-    float: left ;
-    padding-top: 10px;
-    margin-top: 5px;
-}
-
-.icon{
-    width: 200px;
-    float: left;
-    height: 70px;
-}
-.logo{
-    color: orangered;
-    font-size: 35px;
-    font-family: Calibri;
-    padding-left: 20px;
-    float: left ;
-    padding-top: 10px;
-    margin-top: 5px;
-}
-.menu{
-    
-    width: 400px;
-    float: left;
-    height: 70px;
-}
-
-ul{
-    
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-ul li{
-    
-    list-style: none;
-    margin-left: 62px;
-    margin-top: 27px;
-    font-size: 20px;
-}
-ul li a{
-    text-decoration: none;
-    color:white ;
-    font-family: calibiri;
-    font-weight: bolder;
-    transition: 0.4s ease-in-out;
-}
-ul li a:hover{
-    color: orangered;
-}
-.search{
-    
-    width: 420px;
-    float:left;
-    margin-left: 270px;
-}
-.srch{
-    font-family: calibiri;
-    width: 200px;
-    height: 40px;
-    background: transparent;
-    border: 1px solid orangered;
-    margin-top: 13 px;
-    color: whitesmoke;
-    border-right: none;
-    font-size: 20px;
-    float: left;
-    padding: 10px;
-    border-bottom-left-radius: 50px;
-    border-top-left-radius: 50px;
-
-}
-.btn{
-width: 100px;
-height: 41px;
-background: yellow;
-border: 2px solid yellow;
-margin-top: 0px;
-color: black;
-font-size: 20px;
-border-bottom-left-radius: 0px;
-border-bottom-right-radius: 10px;
-
-}
-.btn:focus{
-    outline: none;
-}
-.srch:focus{
-    outline: none;
-}
-.content{
-    width: 1200px;
-   
-    height: auto;
-    margin: left;
-    color:whitesmoke;
-    position: relative;
-    text-align: left;
-}
-.content .par{
-    padding-left: 20px;
-    padding-bottom: 25px;
-    font-family: calibiri;
-    letter-spacing: 1.5px;
-    line-height: 30px;
-}
-.content h1{
-    font-family: "calibiri";
-    font-size: 50px;
-    padding-left: 20px;
-    margin-top: 4%;
-    letter-spacing: 2px;
-}
-.content .cn{
-    color:white;
-    width: 170px;
-    height: 50px;
-    background: orangered;
-    border: white;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    font-size: 20px;
-    border-radius: 60px;
-    cursor: pointer;
-    transition: .4s ease;
-}
-.content .cn a{
-    text-decoration: solid;
-    color: black;
-    transition: .3s ease;
-}
-.cn:hover{
-    background:white;
-}
-.content span{
-    color: yellow;
-    font-size: 60px;
-}
-.form{
-   width: 250px;
-   height: 400px;
-   background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-   position: absolute;
-   top: -20px;
-   left: 870px;
-   transform: translate(0%,-5%);
-   border-radius: 10px;
-   padding: 25px;
-}
-.form h2{
-    width: 220px;
-    font-family: sans-serif;
-    text-align: left;
-    color:gold;
-    font-size: 22px;
-    background-color:none;
-    border-radius: 10px;
-    margin: 2px;
-    padding: 8px;   
-}
-.form input{
-    width: 240;
-    height: 35px;
-    background: transparent;
-    border-bottom: 2px solid orangered;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    color: #f3f6f5;
-    font-size: 15px;
-    letter-spacing: 1px;
-    margin-top: 30px;
-    font-family: sans-serif;
-}
-.form input:focus{
-    outline: none;
-}
-::placeholder{
-    color: white;
-    font-family: Arial;
-}
-.btnn{
-   width: 200px;
-   height: 40px;
-   background: yellow;
-   border: none;
-   margin-top: 30px;
-   font-size: 18px;
-   border-radius: 10px;
-   cursor: pointer;
-   color: white;
-   transition: .4s ease;
-   
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
   
-}
-.btnn:hover{
-    background: white;
-    color: #ff7230;
-}
-.btnn a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-.form .link{
-    font-family:sans-serif;
-    font-size: 17px;
-    padding-left:0px;
-    padding-top: 20px;
-    text-align: left;
-}
-.form .link a{
-    
-    text-decoration: none;
-    color: orangered
-   
-}
-.liw{
-    padding-top: 15px;
-    padding-bottom: 10px;
-    text-align: center;
-
-}
-.icons a{
-    text-decoration: none;
+  body {
+    background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url('ucl.jpg') no-repeat center center/cover;
     color: white;
-}
-.icons ion-icon{
-    color: white;
-    font-size: 48px;
-    padding-left: 14px;
-    padding-top: 4px;
-    transition: .4s ease;
-}
-.icons ion-icon:hover{
+  }
+  
+  .main {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-size: 28px;
     color: orangered;
-}
-
-.credit .par{
-    color: yellow;
-    padding-left: 120px;
-    padding-top: -1620px;
-    font-family: Arial;
-    letter-spacing: 1.2px;
-    line-height: 20px;
-}
-@media screen and(max-width: 1200px){
-    .navbar{
-        width: 100%;
-        height:100px
+  }
+  
+  .logo1 {
+    font-size: 16px;
+    color: white;
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px 0;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 5px 10px;
+    transition: 0.3s;
+  }
+  
+  .menu ul li a:hover,
+  .menu ul li a.active {
+    color: orangered;
+    border-bottom: 2px solid orangered;
+  }
+  
+  .search {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .srch {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    width: 180px;
+  }
+  
+  .btn {
+    padding: 8px 14px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .content {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .content h1 span {
+    color: orangered;
+  }
+  
+  .par {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .cn a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .cn {
+    background-color: orangered;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 40px;
+  }
+  
+  .form {
+    max-width: 400px;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.4);
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  .form h2 {
+    margin-bottom: 20px;
+  }
+  
+  .form input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+  }
+  
+  .btnn {
+    width: 100%;
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .link {
+    font-size: 14px;
+  }
+  
+  .liw {
+    margin-top: 10px;
+  }
+  
+  .icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: white;
+  }
+  
+  .credit {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 14px;
+  }
+  
+  /* ✅ Responsive for Phones */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
     }
-
-}
-ul{
-    margin-left: 30px;
-}
+  
+    .menu ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .content h1 {
+      font-size: 26px;
+    }
+  
+    .par {
+      font-size: 16px;
+    }
+  
+    .form {
+      padding: 20px;
+    }
+  
+    .srch {
+      width: 100%;
+    }
+  
+    .search {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+  
