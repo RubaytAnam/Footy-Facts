@@ -6,8 +6,7 @@
   }
   
   body {
-    background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-      url('ucl.jpg') no-repeat center center/cover;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("ucl.jpg") no-repeat center center/cover;
     color: white;
   }
   
@@ -18,36 +17,52 @@
   }
   
   .navbar {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+  }
+  
+  .icon {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
   }
   
   .logo {
-    font-size: 28px;
     color: orangered;
+    font-size: 35px;
+    font-family: Calibri, sans-serif;
+    padding-left: 20px;
+    padding-top: 10px;
   }
   
   .logo1 {
-    font-size: 16px;
+    font-size: 18px;
     color: white;
+    padding-left: 20px;
+  }
+  
+  .menu {
+    margin-left: 30px;
   }
   
   .menu ul {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
     gap: 20px;
-    padding: 10px 0;
+    flex-wrap: wrap;
   }
   
   .menu ul li a {
     text-decoration: none;
     color: white;
-    font-weight: 600;
-    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 6px 10px;
     transition: 0.3s;
   }
   
@@ -59,34 +74,44 @@
   
   .search {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     margin-top: 10px;
   }
   
   .srch {
     padding: 8px 12px;
-    border: none;
     border-radius: 4px;
+    border: none;
     width: 180px;
   }
   
+  /* 🔷 Search Button (teal) */
   .btn {
     padding: 8px 14px;
-    background-color: orangered;
+    background-color: teal;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #006666;
+    transform: scale(1.05);
   }
   
   .content {
-    text-align: center;
-    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 50px auto 0 auto;
+    text-align: left;
   }
   
   .content h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 45px;
+    margin-bottom: 10px;
   }
   
   .content h1 span {
@@ -95,82 +120,97 @@
   
   .par {
     font-size: 18px;
-    margin-bottom: 30px;
-  }
-  
-  .cn a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  .cn {
-    background-color: orangered;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    margin-bottom: 40px;
-  }
-  
-  .form {
-    max-width: 400px;
-    margin: 0 auto;
-    background: rgba(0,0,0,0.4);
-    padding: 30px;
-    border-radius: 10px;
-  }
-  
-  .form h2 {
+    margin-top: 10px;
     margin-bottom: 20px;
   }
   
+  /* 🟠 JOIN US Button */
+  .cn {
+    background-color: orangered;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-bottom: 30px;
+  }
+  
+  .cn:hover {
+    background-color: #cc4400;
+    transform: scale(1.05);
+  }
+  
+  /* 🔐 Login Form */
+  .form {
+    background: rgba(0,0,0,0.5);
+    padding: 30px;
+    max-width: 350px;
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+  
+  .form h2 {
+    margin-bottom: 15px;
+  }
+  
   .form input {
-    display: block;
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     margin-bottom: 15px;
     border: none;
     border-radius: 6px;
   }
   
+  /* 🟠 Login Button */
   .btnn {
-    width: 100%;
     background-color: orangered;
     color: white;
     padding: 10px;
+    width: 100%;
     border: none;
-    border-radius: 6px;
-    margin-bottom: 20px;
+    font-weight: bold;
+    border-radius: 5px;
     cursor: pointer;
+    transition: 0.3s ease;
+    margin-bottom: 10px;
+  }
+  
+  .btnn:hover {
+    background-color: #cc4400;
+    transform: scale(1.05);
   }
   
   .link {
     font-size: 14px;
+    margin-top: 10px;
   }
   
   .liw {
     margin-top: 10px;
+    font-size: 14px;
   }
   
   .icons a {
-    margin: 0 10px;
-    font-size: 24px;
     color: white;
+    font-size: 24px;
+    margin: 0 10px;
   }
   
   .credit {
     text-align: center;
-    margin: 30px 0;
+    color: white;
+    margin-top: 40px;
     font-size: 14px;
   }
   
-  /* ✅ Responsive for Phones */
+  /* 📱 Responsive Only */
   @media (max-width: 768px) {
     .navbar {
       flex-direction: column;
       align-items: flex-start;
+      gap: 10px;
     }
   
     .menu ul {
@@ -178,25 +218,29 @@
       gap: 10px;
     }
   
-    .content h1 {
-      font-size: 26px;
+    .search {
+      width: 100%;
+      flex-direction: column;
     }
   
-    .par {
-      font-size: 16px;
-    }
-  
-    .form {
-      padding: 20px;
-    }
-  
-    .srch {
+    .srch,
+    .btn {
       width: 100%;
     }
   
-    .search {
-      flex-direction: column;
-      align-items: stretch;
+    .content h1 {
+      font-size: 28px;
+    }
+  
+    .form {
+      width: 100%;
+      margin: 30px 0;
+    }
+  
+    .cn {
+      width: 100%;
+      text-align: center;
     }
   }
+  
   
