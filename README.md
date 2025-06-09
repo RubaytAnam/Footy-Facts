@@ -1,2 +1,2 @@
 # Footy-Facts
-This  website created by Rubayt Anam as a football enthusiast
+This  website created by me to add informative and unique knowledge about football
